@@ -3,6 +3,8 @@ import shutil
 import pandas as pd
 import streamlit as st
 import time
+import platform
+
 from win32com import client #biblioteca pip install pywin32
 import pythoncom
 
@@ -105,6 +107,15 @@ def criar_lista_arquivos(pasta_origem, pasta_destino):
 
 #---Função para salvar arquivos .xlsx em .pdf
 def salvar_pdf(df, pasta_origem, pasta_destino):
+    
+    if platform.system() == 'Windows':
+        import win32com.client as client
+        import pythoncom
+    
+    if platform.system() != 'Windows':
+        st.error("Esta funcionalidade só está disponível no Windows.")
+        return
+    
     start_time = time.time()
 
     progress_text = "Operação em andamento. Por favor aguarde."
@@ -192,6 +203,15 @@ def organizar_arquivos(pasta_origem):
 
 #---Função para salvar todos os arquivos XLS a PDF de uma pasta indicada pelo usuário---
 def salvar_pdf_todos(pasta_origem, pasta_destino):
+        
+    if platform.system() == 'Windows':
+        import win32com.client as client
+        import pythoncom
+    
+    if platform.system() != 'Windows':
+        st.error("Esta funcionalidade só está disponível no Windows.")
+        return
+    
     start_time = time.time()
 
     #Indicar que o df será a lista gerada dos arquivos na pasta de origem
