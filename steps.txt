@@ -1,0 +1,10 @@
+1- Definir função para copiar arquivos [listo]
+2- Definir função para mover arquivos [listo]
+3- Definir função para remover arquivos [listo]
+4- Gerar arquivo .xlsx com a lista de arquivos de uma pasta selecionada pelo usuário [listo]
+5- Definir funções para gerar PDFs a partir dos arquivos xls [listo]
+6- Organizar arquivos de uma pasta classificando por extensão [listo]
+7- Incluir uma barra de progresso no loop de operações (mover, copiar, salvar, etc) [listo]
+8- Incluir opção de converter todos os arquivos .xlsx de uma pasta para PDF sem incluir uma lista definida, adicionando comprobação de extensão .xlsx do arquivo [listo]
+9- Criar sidebar e pagina com instruções e testar aplicativo completo [listo]
+10- DEPLOY!
