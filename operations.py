@@ -5,8 +5,7 @@ import streamlit as st
 import time
 import platform
 
-from win32com import client #biblioteca pip install pywin32
-import pythoncom
+
 
 #---Função para mover arquivos---
 def mover_arquivos(df, pasta_origem, pasta_destino):
@@ -109,9 +108,9 @@ def criar_lista_arquivos(pasta_origem, pasta_destino):
 def salvar_pdf(df, pasta_origem, pasta_destino):
     
     if platform.system() == 'Windows':
-        import win32com.client as client
+        from win32com import client #biblioteca pip install pywin32
         import pythoncom
-    
+
     if platform.system() != 'Windows':
         st.error("Esta funcionalidade só está disponível no Windows.")
         return
@@ -205,7 +204,7 @@ def organizar_arquivos(pasta_origem):
 def salvar_pdf_todos(pasta_origem, pasta_destino):
         
     if platform.system() == 'Windows':
-        import win32com.client as client
+        from win32com import client #biblioteca pip install pywin32
         import pythoncom
     
     if platform.system() != 'Windows':
