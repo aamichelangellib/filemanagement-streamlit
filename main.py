@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 import operations as op
 
-#---DEFINIÇÃO DE VARIÁVEIS---
+#---DEFINIÇÃO DE VARIÁVEIS----
 layout = 'centered'
 page_title = 'File Management Web App'
 page_icon = '📂'
