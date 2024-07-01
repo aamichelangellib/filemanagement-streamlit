@@ -1,7 +1,4 @@
-import os
 import pandas as pd
-from openpyxl import load_workbook
-from win32com import client
 import streamlit as st
 from PIL import Image
 import operations as op
